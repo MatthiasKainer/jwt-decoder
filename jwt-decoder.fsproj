@@ -8,6 +8,9 @@
     <PublishSingleFile>true</PublishSingleFile>
     <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="jwt-decoder.fs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.18.0" />

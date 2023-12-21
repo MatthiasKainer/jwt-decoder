@@ -25,6 +25,14 @@ Example
 {"sub":"1234567890","name":"John Doe","admin":true}
 ```
 
+You can also provide the zero-based index of the part
+
+```bash
+> echo "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.dyt0CoTl4WoVjAHI9Q_CwSKhl6d_9rhM3NrXuJttkao" | jwt-decoder
+{"alg":"HS256","typ":"JWT"}
+{"sub":"1234567890","name":"John Doe","admin":true}
+```
+
 From there you can process it further, ie
 
 ```bash

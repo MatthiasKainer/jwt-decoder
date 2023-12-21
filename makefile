@@ -6,7 +6,7 @@ run:
 	dotnet run
 
 build-linux:
-	dotnet publish -c Release -o bin
+	dotnet publish -c Release -o bin jwt-decoder.fsproj
 	@echo 
 	@echo 
 	@echo "Add jwt-decoder to the path by running the following line:"
@@ -14,7 +14,7 @@ build-linux:
 	@echo '  [[ ":$$PATH:" != *":$(PWD)/bin"* ]] && PATH="$${PATH}:$(PWD)/bin"'
 
 build-win:
-	dotnet publish -r win-x64 -c Release -o bin
+	dotnet publish -r win-x64 -c Release -o bin jwt-decoder.fsproj
 	@echo 
 	@echo 
 	@echo "Add jwt-decoder to the path by running the following line:"
